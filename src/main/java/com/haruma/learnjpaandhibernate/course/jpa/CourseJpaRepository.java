@@ -1,6 +1,6 @@
-package com.haruma.learn_jpa_and_hibernate.course.jpa;
+package com.haruma.learnjpaandhibernate.course.jpa;
 
-import com.haruma.learn_jpa_and_hibernate.course.Course;
+import com.haruma.learnjpaandhibernate.course.Course;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
@@ -12,7 +12,7 @@ public class CourseJpaRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public void insert(Course course) {
+    public void save(Course course) {
         //All the values are already referenced through @Entity
         //This just connects the values of course into the entity manager.
         entityManager.merge(course);

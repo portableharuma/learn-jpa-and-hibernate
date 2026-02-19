@@ -1,6 +1,6 @@
-package com.haruma.learn_jpa_and_hibernate.course.jdbc;
+package com.haruma.learnjpaandhibernate.course.jdbc;
 
-import com.haruma.learn_jpa_and_hibernate.course.Course;
+import com.haruma.learnjpaandhibernate.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -14,7 +14,7 @@ public class CourseJdbcRepository {
     private static String DELETE_QUERY = "delete from course where id = ?";
     private static String SELECT_QUERY = "select * from course where id = ?";
 
-    public void insert(Course course) {
+    public void save(Course course) {
         springJdbcTemplate.update(INSERT_QUERY, course.getId(), course.getName(), course.getAuthor());
     }
     public void deleteById(long courseId) {

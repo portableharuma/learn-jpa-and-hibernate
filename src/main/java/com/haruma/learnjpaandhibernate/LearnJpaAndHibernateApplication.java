@@ -1,4 +1,4 @@
-package com.haruma.learn_jpa_and_hibernate;
+package com.haruma.learnjpaandhibernate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

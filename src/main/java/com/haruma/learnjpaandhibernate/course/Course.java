@@ -1,4 +1,4 @@
-package com.haruma.learn_jpa_and_hibernate.course;
+package com.haruma.learnjpaandhibernate.course;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

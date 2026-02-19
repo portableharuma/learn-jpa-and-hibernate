@@ -1,4 +1,4 @@
-package com.haruma.learn_jpa_and_hibernate;
+package com.haruma.learnjpaandhibernate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
